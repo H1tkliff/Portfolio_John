@@ -1,0 +1,596 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Heebo Regular";
+  src: url(../fonts/heebo-v20-latin-regular.ttf);
+}
+
+@font-face {
+  font-family: "Heebo Medium";
+  src: url(../fonts/heebo-v20-latin-500.ttf);
+}
+
+@font-face {
+  font-family: "Heebo Bold";
+  src: url(../fonts/heebo-v20-latin-700.ttf);
+}
+
+@font-face {
+  font-family: "Heebo Black";
+  src: url(../fonts/heebo-v20-latin-900.ttf);
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-bottom: 140px;
+}
+
+.header__item {
+  font-family: "Heebo Medium";
+  font-size: 20px;
+  line-height: 29px;
+  color: #000;
+  margin-right: 33px;
+}
+
+.header__item:last-child {
+  margin-right: 60px;
+}
+
+.header__item:hover, .header__item:focus, .header__item:active {
+  opacity: .75;
+}
+
+.header__link {
+  color: #000;
+}
+
+.header__burger {
+  width: 40px;
+  height: 28px;
+  position: relative;
+  display: none;
+}
+
+.header .burger__line {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+}
+
+.header .burger__line_second {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.header .burger__line_third {
+  bottom: 0;
+}
+
+.header__wrapper {
+  max-width: 856px;
+  margin: 0 auto;
+}
+
+.header__title {
+  max-width: 430px;
+  font-family: "Heebo Bold";
+  font-size: 44px;
+  line-height: 60px;
+  color: #21243D;
+}
+
+.header__title-item2 {
+  font-family: "Heebo Bold";
+  font-size: 44px;
+  line-height: 60px;
+  color: #21243D;
+}
+
+.header__subtitle {
+  font-family: "Heebo Regular";
+  font-size: 16px;
+  line-height: 24px;
+  color: #21243D;
+  max-width: 450px;
+  margin-bottom: 47px;
+}
+
+.header__photo {
+  display: block;
+  float: right;
+}
+
+.header__button {
+  width: 208px;
+  height: 47px;
+  font-family: "Heebo Medium";
+  font-size: 20px;
+  line-height: 29px;
+  color: #FFFFFF;
+  background: #FF6464;
+  border-radius: 2px;
+  padding: 9px 20px 17px 21px;
+  margin-bottom: 71px;
+}
+
+.header__button:hover, .header__button:focus, .header__button:active {
+  opacity: .75;
+}
+
+.header .header__active {
+  background: #000;
+}
+
+.main__recent-background {
+  background-color: #EDF7FA;
+}
+
+.main__recent-wrapper {
+  max-width: 856px;
+  margin: 0 auto;
+}
+
+.main__recent-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main__recent-item:last-child {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.main__recent-title {
+  font-family: "Heebo Regular";
+  font-size: 22px;
+  line-height: 60px;
+  color: #21243D;
+}
+
+.main__recent-link {
+  font-family: "Heebo Regular";
+  font-size: 16px;
+  line-height: 60px;
+  text-align: right;
+  color: #00A8CC;
+}
+
+.main__recent-link:hover, .main__recent-link:focus, .main__recent-link:active {
+  opacity: .75;
+}
+
+.main__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__card {
+  position: relative;
+  overflow: hidden;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+          box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+  border-radius: 4px;
+  max-width: 600px;
+  margin-right: 20px;
+  margin-bottom: 32px;
+}
+
+.main__card-title {
+  max-width: 518px;
+  font-family: "Heebo Bold";
+  font-size: 26px;
+  line-height: 38px;
+  color: #21243D;
+  padding-left: 23px;
+  padding-top: 24px;
+  padding-right: 21px;
+  padding-bottom: 17px;
+}
+
+.main__card-date {
+  font-family: "Heebo Regular";
+  font-size: 18px;
+  line-height: 26px;
+  color: #21243D;
+  padding-left: 23px;
+  padding-right: 21px;
+  padding-bottom: 11px;
+}
+
+.main__card-subtitle {
+  font-family: "Heebo Regular";
+  font-size: 16px;
+  line-height: 24px;
+  color: #21243D;
+  padding-left: 23px;
+  padding-right: 21px;
+  padding-bottom: 11px;
+  max-width: 418px;
+}
+
+.wrapper {
+  max-width: 856px;
+  margin: 0 auto;
+}
+
+.featured-title {
+  font-family: "Heebo Regular";
+  font-size: 22px;
+  line-height: 60px;
+  color: #21243D;
+}
+
+.featured__card {
+  margin-bottom: 31px;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.featured__card-photo-1 {
+  float: left;
+  margin-right: 18px;
+}
+
+.featured__card-photo-2 {
+  float: left;
+  margin-right: 18px;
+}
+
+.featured__card-photo-3 {
+  float: left;
+  margin-right: 18px;
+}
+
+.featured__card-title {
+  font-family: "Heebo Bold";
+  font-size: 30px;
+  line-height: 44px;
+  color: #21243D;
+}
+
+.featured__card-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.featured__card-icon {
+  margin-bottom: 16px;
+}
+
+.featured__card-iconsubtitle {
+  padding-top: 15px;
+  margin-left: 26px;
+  position: relative;
+  overflow: hidden;
+  font-family: "Heebo Regular";
+  font-size: 20px;
+  line-height: 29px;
+  color: #8695A4;
+}
+
+.featured__card-subtitle {
+  font-family: "Heebo Regular";
+  font-size: 16px;
+  line-height: 24px;
+  color: #21243D;
+  margin-bottom: 25px;
+}
+
+.footer {
+  padding-bottom: 54px;
+}
+
+.footer__list {
+  padding-top: 134px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__item {
+  margin-right: 30px;
+  margin-bottom: 26px;
+}
+
+.footer__item:last-child {
+  margin-right: 0px;
+}
+
+.footer__desc {
+  text-align: center;
+  font-family: "Heebo Regular";
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #21243D;
+}
+
+.wrapper {
+  max-width: 856px;
+  margin: 0 auto;
+}
+
+/* Media start */
+@media screen and (max-width: 960px) {
+  .header__photo {
+    margin-right: 15px;
+  }
+  .header__title {
+    margin-left: 55px;
+  }
+  .header__title-item2 {
+    margin-left: 55px;
+  }
+  .header__subtitle {
+    margin-left: 55px;
+  }
+  .header__button {
+    margin-left: 55px;
+  }
+  .main__recent-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .main__recent-link {
+    display: none;
+  }
+  .featured-title {
+    text-align: center;
+  }
+  .footer__list {
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header__nav {
+    display: none;
+  }
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+  }
+  .header__title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .header__photo {
+    padding-top: 82px;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 34px;
+  }
+  .header__title-item2 {
+    text-align: center;
+    max-width: 245px;
+    margin: 0 auto;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .header__subtitle {
+    margin-top: 21px;
+    text-align: center;
+    max-width: 370px;
+    padding-right: 45px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .header__button {
+    margin-left: 0;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    margin-bottom: 59px;
+  }
+  .main__cards {
+    display: block;
+    padding-left: 11px;
+    padding-bottom: 20px;
+  }
+  .main__card {
+    margin: 0 auto;
+    margin-bottom: 17px;
+  }
+  .main__card-title {
+    padding: 0;
+    font-size: 22px;
+    line-height: 30px;
+    display: block;
+    margin: 0  auto;
+    text-align: center;
+    padding-top: 12px;
+  }
+  .main__card-date {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 12px;
+  }
+  .main__card-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    margin: 0 auto;
+  }
+  .featured__card {
+    margin-bottom: 201px;
+  }
+  .featured__card-icons {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .featured__card-title {
+    text-align: center;
+  }
+  .featured__card-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 340px;
+  }
+  .featured__card-subtitle {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .featured__card-2 {
+    display: none;
+  }
+  .featured__card-3 {
+    display: none;
+  }
+  .featured-title {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .featured-cards {
+    margin: 0 auto;
+  }
+  .featured__card-photo-1 {
+    float: none;
+    width: 90%;
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  .footer {
+    padding-bottom: 54px;
+  }
+  .footer__desc {
+    padding-bottom: 54px;
+  }
+  .header__burger {
+    display: block;
+    position: fixed;
+    margin-top: 20px;
+    margin-right: 18px;
+    top: 0;
+    right: 0;
+    width: 40px;
+  }
+}
